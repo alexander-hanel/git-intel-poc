@@ -27,13 +27,10 @@ In the past couple of days there has been some talk on Twitter about tracking Ra
 #### How?
 For starters we'll need a couple of items. The first is a malware template, a set of malware families and a Git repo. For the malware template I'm going to use [MAT](https://bitbucket.org/Alexander_Hanel/mat), the families will be a set of banking malware (the ransomware list would work for anyone doing the at home version) and a repo such as GitHub or BitBucket. The structure of the repo is simple. The root directory contains a `README.md` and a directory named `families`. The `README.md` will be the parent page that contains a list of all the banking malware families. 
 ```
-Adramax 
 Ainslot 
 Ares
 Banbra 
 ...
-URLZone
-Usteal
 Vkont
 Wemon
 Yaludle
@@ -52,33 +49,37 @@ import shutil
 import os 
 fam = """Adramax 
 Ainslot 
+Ares
 Banbra 
-....
+Vkont
 Wemon
 Yaludle
 ZeuS"""
 for f in fam.split("\n"):
-    name = f.strip("\n") + ".md"
+    temp = f.strip(" ").replace(" ", "_")
+    name = temp + ".md"
     shutil.copy2("template.md", name)
     os.mkdir(f)
     print " - [%s](./families/%s)" % (f, name)
 ```
 Generated Markdown Code
 ```
- - [TorRat](./families/TorRat.md)
- - [URLZone](./families/URLZone.md)
- - [Usteal](./families/Usteal.md)
+ - [Adramax ](./families/Adramax.md)
+ - [Ainslot ](./families/Ainslot.md)
+ - [Ares](./families/Ares.md)
+ - [Banbra ](./families/Banbra.md)
  - [Vkont](./families/Vkont.md)
  - [Wemon](./families/Wemon.md)
  - [Yaludle](./families/Yaludle.md)
  - [ZeuS](./families/ZeuS.md)
 ```
 
-The generated markdown output can be added to `README.md` which would generate the following example links (do not link to anything).
+The generated markdown output can be added to `README.md` which would generate the following example links. See [POC](./POC/README.MD) for working example. 
 
- - [TorRat](./families/TorRat.md)
- - [URLZone](./families/URLZone.md)
- - [Usteal](./families/Usteal.md)
+ - [Adramax ](./families/Adramax.md)
+ - [Ainslot ](./families/Ainslot.md)
+ - [Ares](./families/Ares.md)
+ - [Banbra ](./families/Banbra.md)
  - [Vkont](./families/Vkont.md)
  - [Wemon](./families/Wemon.md)
  - [Yaludle](./families/Yaludle.md)
