@@ -23,7 +23,7 @@ In the past couple of days there has been some talk on Twitter about tracking Ra
  - Simple format, not easily query able.  
  - Constant merging. 
  - Parent and child pages must both be edited to show a relationship. 
- - Most organizations don't like to change.  
+ - Don't like change.  
 
 #### How?
 For starters we'll need a couple of items. The first is a malware template, a set of malware families and a Git repo. For the malware template I'm going to use [MAT](https://bitbucket.org/Alexander_Hanel/mat), the families will be a set of banking malware (the ransomware list would work for anyone doing the at home version) and a repo such as GitHub or BitBucket. The structure of the repo is simple. The root directory contains a `README.md` and a directory named `families`. The `README.md` will be the parent page that contains a list of all the banking malware families. 
