@@ -44,7 +44,7 @@ The `README.md` can be sorted by date, alphabetically or however is convenient. 
  3. `malware_family_X` - Directory renamed with the family of malware.
 	 - Used for storage. 
 
-Using Python a skeleton using `template.md` can be created all of the banking families.  The following code creates the template and directory for each family and prints out the Markdown code for `README.md`.
+A skeleton using Python and `template.md` can be created all of the banking families.  The following code creates the template and directory for each family and prints out the Markdown code for `README.md`.
 ```
 import shutil
 import os 
