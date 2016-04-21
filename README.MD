@@ -1,5 +1,5 @@
-### TLDR
-Git is awesome for tracking code. Why not use it for tracking malware families and c ampaigns?
+### TL;DR
+Git is awesome for tracking code. Why not use it for tracking malware families and campaigns?
 
 ### Motivation 
 In the past couple of days there has been some talk on Twitter about tracking Ransomware families.  The initial energy has focused on creating a [spreadsheet](https://docs.google.com/spreadsheets/d/1TWS238xacAto-fLKh1n5uTsdijWdCEsGIM0Y0Hvmc5g/edit#gid=0) for tracking ransomware families and their indicators. I'm not a big fan of spreadsheets. They are useful for modeling of atomic values but don't provide value when trying to understand a threat group or family of malware. Rather than using a spreadsheets I'd like to propose using Git for tracking malware families. In theory, Git can be used for tracking families of malware, threat groups or exploit kits. 
@@ -88,4 +88,4 @@ The generated markdown output can be added to `README.md` which would generate t
 Each of the malware families pages would contain a template that then can be populated.  Now comes the power of community for tracking the families.
 
 #### Closing Thoughts
-Git has a lot of potential for intel tracking. I'm hoping more people adopt a similar methodology.   
+Git has a lot of potential for intel tracking. I'm hoping more people adopt a similar methodology.
