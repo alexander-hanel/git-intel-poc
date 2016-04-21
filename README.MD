@@ -6,6 +6,7 @@ In the past couple of days there has been some talk on Twitter about tracking Ra
 
 #### Why use Git?
 
+ - Large community of Git users. 
  - Simple format. 
  - Easy to track changes. 
 	 - Merges can be used to track modifications. 
